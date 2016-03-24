@@ -2,6 +2,8 @@
 
 <p>A simple flashhcard game that enables the user to practice Hiragana and Katakana via simple and attractive flashcard program</p>
 
+<p>Current live version can be seen <a href="http://david-fisher.esy.es/hiragana/hiragana.html">here</a></p>
+
 <h2>Current Features</h2>
 <ul>
   <li>Full Hiragana and Katakana alphabets and a rolling flashcard game to practice</li>
