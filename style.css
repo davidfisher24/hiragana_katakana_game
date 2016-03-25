@@ -1,0 +1,324 @@
+@font-face {
+		    font-family: 'hiragana_tfbregular';
+		    src: url('fonts/hiragana_tfb-webfont.eot');
+		    src: url('fonts/hiragana_tfb-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/hiragana_tfb-webfont.woff2') format('woff2'),
+		         url('fonts/hiragana_tfb-webfont.woff') format('woff'),
+		         url('fonts/hiragana_tfb-webfont.ttf') format('truetype'),
+		         url('fonts/hiragana_tfb-webfont.svg#hiragana_tfbregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'japaneseregular';
+			src: url('fonts/japanese-webfont.eot');
+			src: url('fonts/japanese-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/japanese-webfont.woff2') format('woff2'),
+				 url('fonts/japanese-webfont.woff') format('woff'),
+				 url('fonts/japanese-webfont.ttf') format('truetype'),
+				 url('fonts/japanese-webfont.svg#japaneseregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'japanese_brushregular';
+			src: url('fonts/japab___-webfont.eot');
+			src: url('fonts/japab___-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/japab___-webfont.woff2') format('woff2'),
+				 url('fonts/japab___-webfont.woff') format('woff'),
+				 url('fonts/japab___-webfont.ttf') format('truetype'),
+				 url('fonts/japab___-webfont.svg#japanese_brushregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'katakana_tfbregular';
+		    src: url('fonts/katakana_tfb-webfont.eot');
+		    src: url('fonts/katakana_tfb-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/katakana_tfb-webfont.woff2') format('woff2'),
+		         url('fonts/katakana_tfb-webfont.woff') format('woff'),
+		         url('fonts/katakana_tfb-webfont.ttf') format('truetype'),
+		         url('fonts/katakana_tfb-webfont.svg#katakana_tfbregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		* {
+			box-sizing:border-box; 	
+			margin: 0;
+			font-size: 62.5%;
+			font-family: 'japanese_brushregular';
+		}
+
+		body {
+			background-color: #FF5C56;
+		}
+
+		.clearfix {
+			overflow: auto;
+		}
+
+		#game {
+			width: 40%;
+			margin: auto;
+			margin-top: 10%;
+			background-color:white;
+			padding: 1%;
+		}
+
+		#character {
+			font-family: 'hiragana_tfbregular';
+			text-align: center;
+			font-size: 20rem;
+			padding: 2%;
+			margin-bottom: 5%;
+		}
+
+		#correct, #wrong, #percent, p {
+			width: 80%;
+			margin-left: 3%;
+			font-size: 2.8rem;
+			display: block;
+			margin-bottom: 12%;
+		}
+
+		input.hiragana {
+			font-size: 7rem;
+			display: block;
+			margin: auto;
+			text-align:center;
+			border:1px solid #FF5C56;
+		}
+
+		input.katakana {
+			font-size: 7rem;
+			display: block;
+			margin: auto;
+			text-align:center;
+			border:1px solid blue;
+		}
+
+		input.hiragana:focus {
+			outline:1px solid #FF5C56;
+		}
+
+		input.katakana:focus {
+			outline:1px solid #53DCFF;
+		}
+		
+		button.hiragana {
+			display: block;
+			width: 50%;
+			height: 10%;	
+			border-radius: 20%;
+			font-size: 4rem;
+			margin: auto;
+			margin-top: 10px;
+			background-color: #FF5C56;
+		}
+
+		button.katakana {
+			display: block;
+			width: 50%;
+			height: 10%;	
+			border-radius: 20%;
+			font-size: 4rem;
+			margin: auto;
+			margin-top: 10px;
+			background-color: #53DCFF;
+		}
+		
+		button.hiragana:hover {
+			cursor:pointer;	
+			background-color: #FFA6A2;
+		}
+
+		button.katakana:hover {
+			cursor:pointer;	
+			background-color: #A2ECFF;
+		}
+
+		button#change {
+			position:fixed;
+			top: 0;
+			right: 1%;
+			font-size: 1.4rem;
+			line-height: 2rem;
+			width: 15%;
+		}
+
+		button#reset {
+			position:fixed;
+			top:12%;
+			right: 1%;
+			font-size: 1.4rem;
+			line-height: 2rem;
+			width: 15%;
+		}
+		
+		#left {
+			width: 60%;
+			float: left;	
+		}
+		
+		#right {
+			width: 40%;
+			float: right;	
+		}
+
+		h1 {
+			font-family: 'japanese_brushregular';
+			position:fixed;
+			top: 5%;
+			left: 0;
+			width: 20%;
+			font-size: 3rem;
+			text-align:center;
+		}
+		
+		.decoration-text1 {
+			position:fixed;
+			top: 10%;
+			left: 15%;	
+			width: 5%;
+			font-size: 8rem;
+			font-family: 'japaneseregular';
+		}
+		
+		.decoration-text2 {
+			position:fixed;
+			top: 10%;
+			right: 18%;	
+			width: 5%;
+			font-size: 8rem;
+			font-family: 'japaneseregular';
+		}
+
+		#woman1 {
+			position: fixed;
+			width: 15%;
+			bottom: 0;
+			left: 0;
+		}
+
+		#woman2 {
+			position:fixed;
+			width: 15%;
+			bottom: 0;
+			right: 0;
+		}
+
+		#roof {
+			position: fixed;
+			top:3%;
+			left:26%;
+			width: 48%;
+		}
+		
+		#grass1 {
+			width: 50%;
+			position:fixed;
+			bottom: -5%;
+			left:0;
+		}
+
+		#grass2 {
+			width: 50%;
+			position:fixed;
+			bottom: -5%;
+			right:0;
+		}
+
+		#errorBox {
+			width: 30%;
+			position: fixed;
+			left: 35%;
+			top: 85%;
+			font-size: 2.5rem;
+			border: 1px solid black;
+			z-index: 1000;
+			background-color: rgba(127,49,46,.9);
+			padding: 1%;
+			text-align:center;
+			border-radius: 10%;
+			border: 1px solid black;
+			box-shadow: 2px 2px 2px black;
+			display:none;
+		}
+		
+		
+		.hidden {
+			display:none;
+		}
+
+		@media screen and (max-width: 768px) {
+			* {
+				font-size: 40%;
+			}
+			#woman1 {
+				bottom: 46%;
+			}
+
+			#woman2 {
+				bottom: 46%;
+			}
+
+			#roof {
+				top: 2%;
+			}
+			
+			#grass1 {
+				bottom: 47%;
+				height: 30px;
+			}
+
+			#grass2 {
+				height: 30px;
+				bottom: 47%;
+			}
+
+			#errorbox {
+				top: 50%;
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			* {
+				font-size: 35%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			* {
+				font-size: 25%;
+			}
+
+			#woman1 {
+				bottom: 60%;
+			}
+
+			#woman2 {
+				bottom: 60%;
+			}
+
+			#roof {
+				top: 1%;
+			}
+			
+			#grass1 {
+				bottom: 60%;
+				height: 20px;
+			}
+
+			#grass2 {
+				height: 20px;
+				bottom: 60%;
+			}
+
+			#errorbox {
+				top: 38%;
+			}
+		}

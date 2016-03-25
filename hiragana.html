@@ -1,0 +1,53 @@
+<!doctype <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hiragana Flashcard Game</title>
+	<script type="text/javascript" src="hiragana.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+    <p class="decoration-text1"> a<br>b<br>c<br>d<br>e</p>
+    <p class="decoration-text2"> f<br>g<br>h<br>i<br>j</p>
+
+    <div id="game" class="clearfix">
+    	<div id="left">
+        	<div id="character"><br>
+			</div>
+            <input type="text" size="3" maxlength="3" name="input" id="input" class="hiragana" value="" required autofocus>
+			<button type="submit" id="submit" class="hiragana" name="submit">GO!</button>
+        </div>
+        <div id="right" class="clearfix">
+        	<div id="correct">
+			<p>Correct:</p><p class="stats"></p>
+			</div>
+			<div id="wrong">
+			<p>Wrong:</p><p class="stats"></p>
+			</div>
+			<div id="percent">
+			<p>Percent:</p><p class="stats"></p>
+			</div>
+			<div id="cat">
+				<img src="img/cat-happy.gif" style="display:none;">
+				<img src="img/cat-neutral.gif" style="display:none;">
+				<img src="img/cat-sad.gif" style="display:none;">
+			</div>
+        </div>
+    </div>
+    <h1>Lilette's Hiragana Practice</h1>
+    <img src="img/roof.png" id="roof">
+    <img src="img/woman1.png" id="woman1">
+    <img src="img/woman2.png" id="woman2">
+    <img src="img/grass.png" id="grass1">
+    <img src="img/grass.png" id="grass2">
+    <button type="submit" id="change" class="hiragana" name="change">PRACTICE<br>KATAKANA</button>
+    <button type="submit" id="reset" class="hiragana" name="reset">RESET<br>STATISTICS</button>
+
+    <div id="errorbox">
+    OOPS! You didn't enter a valid syllable.
+    </div>
+
+</body>
+</html>
